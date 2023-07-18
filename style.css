@@ -1,3 +1,79 @@
-*{
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+/* common styles */
+* {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
 }
+.pink-word {
+  color: #ff42a5;
+}
+/* header styles */
+.nav-container {
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo img {
+  width: auto;
+  height: 2.1rem;
+}
+.logo h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  list-style: none;
+  color: #3c354f;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+#btn-follow {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 10px 20px;
+}
+.nav-menu li i {
+  margin: auto 5px;
+}
+
+/* responsive part start */
+/* media quares for mobile */
+@media screen and (max-width: 576px) {
+  header {
+    margin-top: 110px;
+  }
+  .nav-container,
+  .nav-menu {
+    flex-direction: column;
+  }
+  .nav-menu {
+    margin-top: 40px;
+  }
+}
+/* media quares for tablet */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    margin-top: 60px;
+  }
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-menu{
+    margin-top: 20px;
+  }
+}
+/* responsive part end */
