@@ -3,12 +3,24 @@
 /* common styles */
 * {
   margin: 0;
+  box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
 .pink-word {
   color: #ff42a5;
 }
-/* header styles */
+.btn-primary {
+  border-radius: 40px;
+  border-style: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #ff42a5;
+  padding: 15px 30px;
+}
+
+/* nav styles start*/
 .nav-container {
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -46,9 +58,44 @@
   background: rgba(11, 2, 35, 0.1);
   padding: 10px 20px;
 }
-.nav-menu li i {
+.nav-menu li a {
   margin: auto 5px;
+  color: #3c354f;
 }
+/* nav styles end*/
+
+/* banner styles start*/
+.banner-container {
+  display: flex;
+  align-items: center;
+  max-width: 85%;
+  margin-left: 80px
+}
+.banner-title {
+}
+.banner-title h3 {
+  color: #0b0223;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.banner-title h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-title p {
+  color: #534c64;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.banner-image {
+  height: 600px;
+}
+/* banner styles end*/
 
 /* responsive part start */
 /* media quares for mobile */
@@ -72,7 +119,7 @@
   .nav-container {
     flex-direction: column;
   }
-  .nav-menu{
+  .nav-menu {
     margin-top: 20px;
   }
 }
