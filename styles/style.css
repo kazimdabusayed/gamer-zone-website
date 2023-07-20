@@ -101,16 +101,13 @@
   margin: 8px 0;
   text-transform: lowercase;
 }
-.banner-image {
-  /* height: 550px; */
-}
 /* banner styles end*/
 
 /* Online Games Style  */
-.online-games {
+/* .online-games {
   max-width: ;
 
-}
+} */
 .online-games h2 {
   text-align: center;
   color: #0b0223;
@@ -248,16 +245,14 @@ footer {
   cursor: pointer;
   margin: 0 1rem;
 }
-.terms ul,
-.copyright p {
+.terms ul,.copyright p {
   list-style: none;
   display: inline-flex;
   padding: 10px;
   align-items: flex-start;
   gap: 35px;
 }
-.terms ul li,
-.copyright p {
+.terms ul li,.copyright p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1rem;
   font-weight: 500;
@@ -266,26 +261,25 @@ footer {
 /* media quares for mobile */
 @media screen and (max-width: 576px) {
   header {
-    margin-top: 110px;
+  margin-top: 110px;
   }
-  .nav-container,
-  .nav-menu {
-    flex-direction: column;
+  .nav-container,.nav-menu {
+  flex-direction: column;
   }
   .nav-menu {
-    margin-top: 40px;
+  margin-top: 40px;
   }
 }
 /* media quares for tablet */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   header {
-    margin-top: 60px;
+  margin-top: 60px;
   }
   .nav-container {
-    flex-direction: column;
+  flex-direction: column;
   }
   .nav-menu {
-    margin-top: 20px;
+  margin-top: 20px;
   }
 }
 /* responsive part end */
