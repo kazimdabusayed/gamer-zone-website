@@ -83,7 +83,7 @@
 .banner-title {
   background-image: url(./images/Group_14.png);
   background-repeat: no-repeat;
-  fill: linear-gradient(223deg,rgba(140, 87, 238, 0.03) 0%,);
+  fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%);
 }
 .banner-title h3 {
   color: #0b0223;
@@ -106,7 +106,8 @@
 /* Online Games Style  */
 .online-games {
   max-width: 1150;
-  min-height: 100vh;
+  margin: auto;
+  height: fit-content;
 }
 .online-games h2 {
   text-align: center;
@@ -121,6 +122,7 @@
   margin-bottom: 2rem;
 }
 .games-card {
+  max-height: 600px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.2rem;
@@ -139,9 +141,9 @@
   position: absolute;
   top: 0;
   background-color: #0b022395;
-  padding: 37% 30%;
+  padding: 42% 30%;
   border-radius: 16px;
-  border: 6px solid #f948b2;
+  border: 4px solid #f948b2;
   cursor: pointer;
   display: none;
 }
@@ -210,6 +212,47 @@
   left: 0px;
 }
 
+/* Game Collection style */
+.game-collection {
+  min-width: 1150px;
+  padding: 0 50px;
+}
+.game-collection h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+.game-container {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.games {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 5px solid transparent;
+  padding: 6px;
+}
+.games img {
+  width: 50px;
+  height: 50px;
+}
+.games p {
+  font-weight: 600;
+}
+.games:hover {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid #ff42a5;
+  border-radius: 48px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
 /* footer style */
 footer {
   background: #0b0223;
@@ -245,14 +288,16 @@ footer {
   cursor: pointer;
   margin: 0 1rem;
 }
-.terms ul,.copyright p {
+.terms ul,
+.copyright p {
   list-style: none;
   display: inline-flex;
   padding: 10px;
   align-items: flex-start;
   gap: 35px;
 }
-.terms ul li,.copyright p {
+.terms ul li,
+.copyright p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1rem;
   font-weight: 500;
@@ -261,25 +306,26 @@ footer {
 /* media quares for mobile */
 @media screen and (max-width: 576px) {
   header {
-  margin-top: 110px;
+    margin-top: 110px;
   }
-  .nav-container,.nav-menu {
-  flex-direction: column;
+  .nav-container,
+  .nav-menu {
+    flex-direction: column;
   }
   .nav-menu {
-  margin-top: 40px;
+    margin-top: 40px;
   }
 }
 /* media quares for tablet */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   header {
-  margin-top: 60px;
+    margin-top: 60px;
   }
   .nav-container {
-  flex-direction: column;
+    flex-direction: column;
   }
   .nav-menu {
-  margin-top: 20px;
+    margin-top: 20px;
   }
 }
 /* responsive part end */
