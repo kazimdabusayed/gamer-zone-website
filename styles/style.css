@@ -104,10 +104,10 @@
 /* banner styles end*/
 
 /* Online Games Style  */
-/* .online-games {
-  max-width: ;
-
-} */
+.online-games {
+  max-width: 1150;
+  min-height: 100vh;
+}
 .online-games h2 {
   text-align: center;
   color: #0b0223;
