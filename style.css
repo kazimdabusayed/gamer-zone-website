@@ -325,14 +325,21 @@ footer {
 /* media quares for mobile */
 @media screen and (max-width: 576px) {
   header {
-    margin-top: 110px;
+    margin-top: 100px;
   }
   .nav-container,
   .nav-menu {
     flex-direction: column;
   }
   .nav-menu {
-    margin-top: 40px;
+    margin: 40px 0 80px 0;
+  }
+  
+  .banner-container{
+    flex-direction: column-reverse;
+  }
+  .banner-image{
+    margin: 30px 0;
   }
 }
 /* media quares for tablet */
